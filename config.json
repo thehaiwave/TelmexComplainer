@@ -1,8 +1,20 @@
 {
+    "atISP": "",
+    "internetSpeedThreshold": "30",
     "twitterAuth":{
         "twitterApiKey": "",
         "twitterApiKeyScret": "",
         "twitterAccessToken": "",
         "twitterAccessTokenSecret": ""
+    },
+    "tweetSelection": {
+        "bad": [
+            "b1",
+            "b2"
+        ],
+        "horrible": [
+            "h1",
+            "h2"
+        ]
     }
 }
