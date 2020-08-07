@@ -1,6 +1,6 @@
 {
     "atISP": "",
-    "internetSpeedThreshold": "30",
+    "internetSpeedThreshold": 30,
     "twitterAuth":{
         "twitterApiKey": "",
         "twitterApiKeyScret": "",
