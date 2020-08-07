@@ -1,5 +1,5 @@
 {
-    "atISP": "",
+    "atISP": "Telmex",
     "internetSpeedThreshold": 30,
     "twitterAuth":{
         "twitterApiKey": "",
@@ -9,12 +9,12 @@
     },
     "tweetSelection": {
         "bad": [
-            "b1",
-            "b2"
+            "Es impresionante lo culero que esta {atISP}. Tengo {speedTestResults} Mbps",
+            "Pinche internet lento de {speedTestResults} Mpbs. Me voy a cambiar a Izzi si {atISP} no arregla su servicio."
         ],
         "horrible": [
-            "h1",
-            "h2"
+            "Que putas vergas le pasa a {atISP}. Tengo pinches {speedTestResults} Mbps",
+            "{atISP} no vale verga. Pago por 30Mpbs y tengo {speedTestResults}"
         ]
     }
 }
