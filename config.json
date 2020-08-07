@@ -1,0 +1,8 @@
+{
+    "twitterAuth":{
+        "twitterApiKey": "",
+        "twitterApiKeyScret": "",
+        "twitterAccessToken": "",
+        "twitterAccessTokenSecret": ""
+    }
+}
