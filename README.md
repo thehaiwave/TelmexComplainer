@@ -36,7 +36,7 @@ You can configure this program through the `config.json` file:
 Now, you might be thinking, "Wait, how does this account for the bandwidth used up by the speedtest itself?". The answer is it doesn't. As much
 as I hate my ISP, it's a little unfair to spam them with tweets everytime my internet speed is 1 Mbps slower than what it's supposed to.
 Because of this, this program decides if your speed is 'bad' or 'horrible' depending on what percentage of the advertised speed you actually have.
-So if you are paying for 30 Mbps, for instance, then this program will only tweet if your current speed dips below 40% (bad) or 50% (horrible) of those
+So if you are paying for 30 Mbps, for instance, then this program will only tweet if your current speed dips below 60% (bad) or 50% (horrible) of those
 30 Mbps. 
 
 
