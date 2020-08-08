@@ -19,6 +19,7 @@ def main():
             
             while datetime.now() < dt:
                 time.sleep(1)
+
         except:
             sys.exit(1)
             
@@ -34,13 +35,13 @@ class ManageBot():
         speedResult = speedtest.Speedtest()
         speedResult.get_servers()
         speedResult.get_best_server()
-        return speedResult.upload()
+        return speedResult.download()
 
     def speedAssessment(self, speedResults):
         speedResults = (speedResults/1024)/1024
         speedThreshold = self.config['internetSpeedThreshold']
 
-        if(speedResults < (speedThreshold*60)/100):
+        if(speedResults < (speedThreshold*90)/100):
             return "bad"
         elif(speedResults < (speedThreshold*50)/100):
             return "horrible"
@@ -51,15 +52,9 @@ class ManageBot():
         speedStatus = self.speedAssessment(speedTestResult)
         speedTestResult = round((speedTestResult/1024)/1024)
 
-        try:
-            # If this fails it's because speedAssessment() returned None. Not really an error, the speed is just not low enough
-            # so there's really no harm in ignoring it.
-            # Should sendTweet() fail, the error is going to be thrown inside the function and not the call, so the program
-            # will stop because the bot instance is wrapped in a try-catch. Probably not the best way of handling an exception.
-            message = self.config["tweetSelection"][speedStatus][random.randint(0,1)].replace('{speedTestResults}', str(speedTestResult)).replace('{atISP}', self.config["atISP"]).replace('{internetSpeedThreshold}', self.config["internetSpeedThreshold"])
+        if speedStatus is not None:
+            message = self.config["tweetSelection"][speedStatus][random.randint(0,1)].replace('{speedTestResults}', str(speedTestResult)).replace('{atISP}', self.config["atISP"]).replace('{internetSpeedThreshold}', str(self.config["internetSpeedThreshold"]))
             self.sendTweet(message)
-        except:
-            pass
 
     def sendTweet(self, message):
         api = twitter.Api(consumer_key=self.config["twitterAuth"]["twitterApiKey"],
