@@ -14,7 +14,7 @@ def main():
     while True:
         try:
             botInstance.run()
-            dt = datetime.now() + timedelta(seconds=1)
+            dt = datetime.now() + timedelta(hours=1)
             dt = dt.replace(minute=10)
             
             while datetime.now() < dt:
