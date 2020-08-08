@@ -10,7 +10,7 @@
     "tweetSelection": {
         "bad": [
             "Es impresionante lo culero que esta {atISP}. Tengo {speedTestResults} Mbps y pago por {internetSpeedThreshold} Mbps",
-            "Oye {atISP}, ¿por qué tengo {speedTestResults} Mpbs si pago por 30 Mbps?"
+            "Oye {atISP}, ¿por qué tengo {speedTestResults} Mpbs si pago por {internetSpeedThreshold} Mbps?"
         ],
         "horrible": [
             "Que putas vergas le pasa a {atISP}. Pago por {internetSpeedThreshold} Mbps y tengo pinches {speedTestResults} Mbps",
