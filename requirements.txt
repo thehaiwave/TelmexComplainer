@@ -1,0 +1,2 @@
+python-twitter==3.5
+speedtest-cli==2.1.2
