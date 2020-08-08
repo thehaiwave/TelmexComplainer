@@ -28,7 +28,7 @@ You can configure this program through the `config.json` file:
 * {atISP}: This is the username (@) of the ISP account that will be mentioned in your tweets
 * {internetSpeedThreshold}: The internet speed (download speed in this case) that you are paying for 
 * {twitterAuth}: This is just where your API keys will go
-* {tweetSelection}: This is where you will get your tweets from, depending on how bad your internet speed is
+* {tweetSelection}: This is where you will get your tweets from, depending on how bad your internet speed is (my messages are in Spanish, so change them if you need to)
   * bad: Slightly angry tweets
   * horrible: Really angry tweets
 
