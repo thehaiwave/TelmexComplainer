@@ -5,7 +5,6 @@ import json
 import random
 import twitter
 import time
-import daemon
 from datetime import datetime, timedelta
 
 def main():
