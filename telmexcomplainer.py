@@ -41,7 +41,7 @@ class ManageBot():
         speedResults = (speedResults/1024)/1024
         speedThreshold = self.config['internetSpeedThreshold']
 
-        if(speedResults < (speedThreshold*90)/100):
+        if(speedResults < (speedThreshold*60)/100):
             return "bad"
         elif(speedResults < (speedThreshold*50)/100):
             return "horrible"
