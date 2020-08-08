@@ -31,6 +31,8 @@ You can configure this program through the `config.json` file:
 * {tweetSelection}: This is where you will get your tweets from, depending on how bad your internet speed is (my messages are in Spanish, so change them if you need to)
   * bad: Slightly angry tweets
   * horrible: Really angry tweets
+  
+Ideally you'd have this running on something like a Raspberry Pi (connected directly to your router) or your mom's old laptop. 
 
 ## Notes
 Now, you might be thinking, "Wait, how does this account for the bandwidth used up by the speedtest itself?". The answer is it doesn't. As much
