@@ -40,7 +40,7 @@ class ManageBot():
         speedResults = (speedResults/1024)/1024
         speedThreshold = self.config['internetSpeedThreshold']
 
-        if(speedResults < (speedThreshold*40)/100):
+        if(speedResults < (speedThreshold*60)/100):
             return "bad"
         elif(speedResults < (speedThreshold*50)/100):
             return "horrible"
@@ -56,7 +56,7 @@ class ManageBot():
             # so there's really no harm in ignoring it.
             # Should sendTweet() fail, the error is going to be thrown inside the function and not the call, so the program
             # will stop because the bot instance is wrapped in a try-catch. Probably not the best way of handling an exception.
-            message = self.config["tweetSelection"][speedStatus][random.randint(0,1)].replace('{speedTestResults}', str(speedTestResult)).replace('{atISP}', self.config["atISP"])
+            message = self.config["tweetSelection"][speedStatus][random.randint(0,1)].replace('{speedTestResults}', str(speedTestResult)).replace('{atISP}', self.config["atISP"]).replace('{internetSpeedThreshold}', self.config["internetSpeedThreshold"])
             self.sendTweet(message)
         except:
             pass

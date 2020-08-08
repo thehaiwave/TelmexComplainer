@@ -1,6 +1,6 @@
 {
     "atISP": "",
-    "internetSpeedThreshold": 30,
+    "internetSpeedThreshold": 0,
     "twitterAuth":{
         "twitterApiKey": "",
         "twitterApiKeyScret": "",
@@ -9,12 +9,12 @@
     },
     "tweetSelection": {
         "bad": [
-            "Es impresionante lo culero que esta {atISP}. Tengo {speedTestResults} Mbps",
-            "Pinche internet lento de {speedTestResults} Mpbs. Me voy a cambiar a Izzi si {atISP} no arregla su servicio."
+            "Es impresionante lo culero que esta {atISP}. Tengo {speedTestResults} Mbps y pago por {internetSpeedThreshold} Mbps",
+            "Oye {atISP}, ¿por qué tengo {speedTestResults} Mpbs si pago por 30 Mbps?"
         ],
         "horrible": [
-            "Que putas vergas le pasa a {atISP}. Tengo pinches {speedTestResults} Mbps",
-            "{atISP} no vale verga. Pago por 30Mpbs y tengo {speedTestResults}"
+            "Que putas vergas le pasa a {atISP}. Pago por {internetSpeedThreshold} Mbps y tengo pinches {speedTestResults} Mbps",
+            "{atISP} no vale verga. Pago por {internetSpeedThreshold} Mpbs y tengo {speedTestResults}"
         ]
     }
 }
